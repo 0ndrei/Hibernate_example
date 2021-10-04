@@ -1,7 +1,6 @@
 package com.example.hibernate_example.controller;
 
 import com.example.hibernate_example.model.City;
-import com.example.hibernate_example.model.Country;
 import com.example.hibernate_example.service.CityService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,5 +1,6 @@
 package com.example.hibernate_example.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,5 +17,11 @@ public class City {
     private String name;
 
     @ManyToOne
+    @JoinColumn(name = "country_id")
     private Country country;
+
+    @JsonBackReference
+    public Country getCountry(){
+        return country;
+    }
 }

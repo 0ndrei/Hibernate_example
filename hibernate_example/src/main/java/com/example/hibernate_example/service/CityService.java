@@ -8,4 +8,6 @@ public interface CityService {
     City save(City country);
     List<City> getAll();
     City get(long id);
+    City update(City City, long id);
+    void delete(long id);
 }

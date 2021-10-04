@@ -18,4 +18,5 @@ public class Country {
 
     @Column(name = "code")
     private String code;
+
 }
